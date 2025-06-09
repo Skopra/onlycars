@@ -1,0 +1,46 @@
+/* Стили для WebKit браузеров (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 15px;
+
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+ }
+
+::-webkit-scrollbar-thumb {
+    background: var(--accent);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent);
+}
+
+/* Стили для Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent) transparent;
+}
+
+/* Стили для IE и Edge */
+body {
+    -ms-overflow-style: none;
+}
+
+body::-ms-scrollbar {
+    width: 15px;
+}
+
+body::-ms-scrollbar-track {
+    background: transparent;
+}
+
+body::-ms-scrollbar-thumb {
+    background-color: var(--accent);
+    border-radius: 5px;
+}
+
+body::-ms-scrollbar-thumb:hover {
+    background: var(--accent);
+}
