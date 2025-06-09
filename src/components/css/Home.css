@@ -1,0 +1,140 @@
+
+
+.main_container{
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1190px;
+    color: var(--header-text);
+
+}
+
+
+.title-1{
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: normal;
+    line-height: 1.1;
+    max-width: 1160px;
+    max-height: 300px;
+
+
+}
+
+.title-1 em{
+    color: var(--accent);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+
+.services {
+    display: flex;
+    flex-wrap: wrap; /* Позволяет обтекание при недостатке места */
+    gap: 40px; /* Расстояние между элементами */
+    padding: 0;
+    list-style: none; /* Удаляет маркеры списка */
+    margin-bottom: 150px;
+}
+
+.service{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-position: center center;
+    border-style: solid;
+    border-color: #282828;
+    background: var(--dark-border);
+    border-radius: 10px;
+    width: 260px;
+    height: 162px;
+    font-size: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+
+.service_icon{
+    margin-top: 112px; /* Отступ снизу для иконки */
+    width: 40px; /* Задайте нужный размер для иконок */
+    height: 40px;
+}
+
+
+
+.title-2{
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: normal;
+    line-height: 1.1;
+    max-width: 1160px;
+    max-height: 300px;
+
+
+}
+
+.title-2 em{
+    color: var(--accent);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.cars_classes {
+    display: flex;
+    flex-wrap: wrap; /* Позволяет обтекание при недостатке места */
+    gap: 40px; /* Расстояние между элементами */
+    padding: 0;
+    list-style: none; /* Удаляет маркеры списка */
+}
+
+.car_class{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+
+    background-position: center center;
+    border-style: solid;
+    border-color: #282828;
+    background: var(--dark-bg);
+    border-radius: 10px;
+    width: 260px;
+    height: 250px;
+    font-size: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+
+}
+
+.car_class:hover{
+    border-color: var(--accent);
+}
+
+.car_class::after {
+    content: attr(data-name);
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.car_class_img{
+    width: 192px; /* Задайте нужный размер для иконок */
+    height: 116px;
+    position: absolute;
+    transition: transform 0.3s;
+}
+
+.car_class:hover .car_class_img {
+    transform: scale(1.25); /* Увеличение на 25% */
+}
+
+

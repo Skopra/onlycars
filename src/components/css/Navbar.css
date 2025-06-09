@@ -1,0 +1,157 @@
+/* src/components/css/Navbar.css */
+
+.navbar {
+    background-color: var(--dark-border);
+    color: var(--header-text);position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 10px 20px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 40px 0 0;
+    gap: 70px;
+
+
+}
+
+.logo {
+    order: 1;
+}
+
+.logo img {
+    height: 44px;
+    width: auto;
+}
+
+.nav-links {
+    display: flex;
+    gap: 70px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    order: 2;
+    flex-wrap: wrap;
+
+}
+
+.nav-links li a {
+    color: var(--header-text);
+    text-decoration: none;
+    font-size: 16px;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.nav-links li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--accent);
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.2s ease-out;
+}
+
+.nav-links li a:hover::after {
+    transform: scaleX(1);
+}
+
+.burger {
+    font-size: 24px;
+    color: var(--header-text);
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+    order: 3;
+}
+
+
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.moon svg {
+    animation: tilt 5s linear infinite;
+}
+
+@keyframes tilt {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-10deg);
+    }
+    75% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.input:checked + .slider {
+    background-color: #183153;
+}
+
+.input:focus + .slider {
+    box-shadow: 0 0 1px #183153;
+}
+
+.input:checked + .slider:before {
+    transform: translateX(30px);
+}
+
+@media (max-width: 1070px) {
+    .burger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: var(--dark-border);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        padding: 20px;
+        border-top: 1px solid #333;
+        order: 4;
+
+    }
+
+
+       .nav-links.open {
+        display: flex;
+    }
+
+    .navbar-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .theme-toggle {
+        order: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}

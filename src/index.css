@@ -1,0 +1,53 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@500&family=Open+Sans:wdth,wght@75..100,300..800&display=swap');
+
+
+:root {
+  --black: #0a0a0a;
+  --brown: #141414;
+  --red: #E52421;
+  --white: #FFF;
+
+  --dark-bg: var(--black);
+  --dark-border: var(--brown);
+
+  --header-text: var(--white);
+  --accent: var(--red);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--dark-bg);
+  color: var(--header-text);
+  font-family: "Open Sans", sans-serif;
+  transition: background 0.3s, color 0.3s;
+}
+
+body.light-theme {
+  --dark-bg: #ffffff;
+  --header-text: #141414;
+  --dark-border: #cccccc;
+  /* --accent остаётся неизменным */
+}
+
+.button {
+  display: inline-block;
+  background-color: var(--accent);
+  color: var(--header-text);
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  max-width: 1112px;
+}
+
+.button:hover {
+  background-color: var(--dark-bg);
+  border-color: var(--accent);
+}
+
