@@ -1,0 +1,96 @@
+.lead-section {
+    max-width: 1170px;
+
+
+}
+
+.lead-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    border-radius: 12px;
+    background-image: url("/img/banner/manager_bg.svg");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+    padding: 40px;
+}
+
+.lead-text {
+    flex: 1;
+    color: white;
+    z-index: 2;
+    min-width: 300px;
+    max-width: 600px;
+}
+
+.lead-text h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.lead-text .accent {
+    color: red;
+}
+
+.lead-text p {
+    margin-bottom: 20px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.lead-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.lead-form input {
+    flex: 1 1 180px;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background: #222;
+    color: white;
+}
+
+.lead-form button {
+    background: red;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    flex: 1 1 120px;
+    border: 2px solid transparent;
+}
+
+.success-message {
+    font-weight: bold;
+    color: lightgreen;
+    margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+    .lead-content {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .lead-text {
+        text-align: center;
+    }
+
+    .lead-form {
+        flex-direction: column;
+    }
+
+    .lead-form input,
+    .lead-form button {
+        flex: 1 1 100%;
+    }
+}

@@ -6,6 +6,7 @@ import '../components/css/Home.css';
 import  "../components/css/header__banner.css";
 import { Link } from 'react-router-dom';
 import PopularCars from "../components/PopularCars";
+import LeadForm from "../components/LeadForm";
 
 
 
@@ -110,6 +111,7 @@ function Home() {
                 </ul>
 
                 <PopularCars />
+                <LeadForm />
 
             </div>
         </main>
