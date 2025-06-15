@@ -6,11 +6,9 @@ import '../components/css/Home.css';
 import  "../components/css/header__banner.css";
 import { Link } from 'react-router-dom';
 import PopularCars from "../components/PopularCars";
-<<<<<<< HEAD
 import LeadForm from "../components/LeadForm";
 import Reputation from "../components/Reputation";
-=======
->>>>>>> 7882e6c0770d0668522dbb8f14f26546db583f36
+
 
 
 
@@ -115,11 +113,8 @@ function Home() {
                 </ul>
 
                 <PopularCars />
-<<<<<<< HEAD
                 <LeadForm />
                 <Reputation />
-=======
->>>>>>> 7882e6c0770d0668522dbb8f14f26546db583f36
 
             </div>
         </main>
