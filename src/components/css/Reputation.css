@@ -1,5 +1,6 @@
 .reputation {
     color: var(--header-text);
+    margin-top: 150px;
 }
 
 .reputation__top {

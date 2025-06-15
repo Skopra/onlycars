@@ -8,6 +8,8 @@ import { Link } from 'react-router-dom';
 import PopularCars from "../components/PopularCars";
 import LeadForm from "../components/LeadForm";
 import Reputation from "../components/Reputation";
+import OrderSteps from "../components/OrderSteps";
+import CallBackForm from "../components/CallBackForm";
 
 
 
@@ -115,6 +117,8 @@ function Home() {
                 <PopularCars />
                 <LeadForm />
                 <Reputation />
+                <OrderSteps />
+                <CallBackForm />
 
             </div>
         </main>

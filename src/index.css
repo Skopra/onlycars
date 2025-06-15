@@ -32,12 +32,13 @@ body.light-theme {
 }
 
 .button {
-  display: inline-block;
+  display: flex;
   background-color: var(--accent);
   color: var(--header-text);
   width: 100%;
   padding: 16px;
   text-align: center;
+  justify-content: center;
   text-decoration: none;
   font-weight: 600;
   border-radius: 10px;

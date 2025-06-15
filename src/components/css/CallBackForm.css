@@ -1,0 +1,85 @@
+.call_back {
+    background-image: url("/img/banner/callback_bg.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 150px;
+    display: flex;
+    justify-content: flex-end;
+    height: 400px;
+    position: relative;
+}
+
+.call_back-content {
+    width: 50%;
+    max-width: 440px;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 35px;
+    border-radius: 10px;
+    color: var(--header-text);
+    line-height: 1.1;
+    position: absolute;
+    top: -38px;
+    right: 40px;
+    border: 1px solid #757575;
+}
+
+.call_back-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.call_back-text {
+    font-size: 16px;
+    margin-bottom: 30px;
+    opacity: 0.8;
+}
+
+.call_back-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.phone-input-wrapper {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.country-select {
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    color: var(--header-text);
+}
+
+.phone-input-wrapper input[type="tel"] {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    background: transparent;
+    color: var(--header-text);
+}
+
+.privacy-policy {
+    margin-top: 20px;
+    font-size: 13px;
+    opacity: 0.7;
+}
+
+.privacy-policy a {
+    color: var(--accent);
+    text-decoration: underline;
+}
+
+.success-message {
+    font-weight: bold;
+    color: lightgreen;
+    margin-top: 10px;
+}

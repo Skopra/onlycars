@@ -1,0 +1,93 @@
+.order_steps {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin-bottom: 150px;
+    gap: 60px;
+}
+
+.order_steps_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 60px;
+    max-width: 400px;
+    padding: 10px;
+}
+
+.steps_title {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.steps_title em {
+    font-style: normal;
+    color: var(--accent);
+}
+
+.order_steps_left .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 340px;
+    height: 60px;
+}
+
+/* Сетка шагов */
+.steps {
+    display: grid;
+    grid-template-columns: 260px 360px;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    padding: 10px;
+    max-width: 660px;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    padding-top: 20px;
+}
+
+.step img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+/* Линия между иконкой и текстом */
+.step::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #757575;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.step p {
+    color: var(--header-text);
+    text-align: start;
+    margin: 0;
+}
+
+/* Адаптив */
+@media (max-width: 900px) {
+    .order_steps {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .steps {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+    }
+
+    .order_steps_left .button {
+        width: 100%;
+    }
+}
