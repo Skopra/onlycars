@@ -41,13 +41,23 @@
 .call_back-form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
 }
+
+.call_back-form input {
+    display: flex;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background: #222;
+    color: white;
+}
+
 
 .phone-input-wrapper {
     display: flex;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgb(34, 34, 34);
     border-radius: 5px;
     overflow: hidden;
 }

@@ -74,9 +74,6 @@ function CallBackForm() {
                             onChange={handleChange}
                         />
                         <div className="phone-input-wrapper">
-                            <select className="country-select" disabled>
-                                <option value="ru">RU</option>
-                            </select>
                             <input
                                 type="tel"
                                 name="phone"
